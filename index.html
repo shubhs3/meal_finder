@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Meal Finder</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<nav>
+			<span> MEAL FINDER </span>
+
+			<form autocomplete="off" id="search-form" ">
+				<div style="display: flex">
+					<input
+						id="search-box"
+						class="form-control"
+						type="text"
+						name="q"
+						id="q"
+					/>
+				</div>
+				<div id="result"></div>
+			</form>
+
+			<div class="dropdown">
+				<button
+					class="btn btn-secondary dropdown-toggle"
+					type="button"
+					data-bs-toggle="dropdown"
+					aria-expanded="false"
+				>
+					<svg
+						height="30px"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 448 512"
+					>
+						<!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+						<path
+							d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+						/>
+					</svg>
+				</button>
+				<ul class="dropdown-menu">
+					<li>
+						<a class="dropdown-item" id="fav-btn">Favourites</a>
+					</li>
+					<li><a class="dropdown-item" id="random-btn" href="#">Random</a></li>
+					<li>
+						<a class="dropdown-item" id="random-btn" href="#">Shubham Sharma</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+
+		<h3 id="heading">
+			<!-- heading from javascrit -->
+		</h3>
+		<div class="container meal-container">
+			<div class="row" id="meal-container"></div>
+			<!-- bootstrap card from javascrit -->
+		</div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-fullscreen" id="modal-dialog">
+				<!-- content from javascrit -->
+			</div>
+		</div>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+
+		<script src="script.js"></script>
+	</body>
+</html>
